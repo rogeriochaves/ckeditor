@@ -2,7 +2,7 @@ source "http://rubygems.org"
 
 gemspec
 
-gem "rails", "3.1.3"
+gem "rails", "3.2.6"
 
 platforms :mri_18 do
   group :test do
@@ -13,9 +13,10 @@ end
 
 platforms :ruby do
   gem "sqlite3"
+  gem "orm_adapter", "~> 0.1"
 
   group :development do
-    gem "unicorn", "~> 4.0.1"
+    gem "unicorn"
   end
 
   group :development, :test do
@@ -27,12 +28,5 @@ platforms :ruby do
     gem "paperclip"
     gem "carrierwave"
     gem "mini_magick"
-  end
-
-  group :mongoid do
-    gem "mongoid"
-    gem "bson_ext"
-    gem 'mongoid-paperclip', :require => 'mongoid_paperclip'
-    gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
   end
 end
