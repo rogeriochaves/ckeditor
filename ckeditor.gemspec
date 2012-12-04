@@ -19,5 +19,5 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   
   s.add_dependency("mime-types", "~> 1.19")
-  s.add_dependency("orm_adapter", "~> 0.1")
+  #s.add_dependency("orm_adapter", "~> 0.1")
 end
