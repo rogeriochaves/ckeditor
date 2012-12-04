@@ -151,7 +151,6 @@ DEPENDENCIES
   ckeditor!
   mini_magick
   mynyml-redgreen (~> 0.7.1)
-  orm_adapter (~> 0.1)
   paperclip
   rails (= 3.2.6)
   ruby-debug

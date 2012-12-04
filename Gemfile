@@ -13,7 +13,7 @@ end
 
 platforms :ruby do
   gem "sqlite3"
-  gem "orm_adapter", "~> 0.1"
+  #gem "orm_adapter", "~> 0.1"
 
   group :development do
     gem "unicorn"
